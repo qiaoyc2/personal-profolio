@@ -359,3 +359,96 @@
       justify-content: center;
     }
   }
+
+  /* --- small typography helpers --- */
+.tight { margin: 0; }
+.edu-row{
+  display:flex;
+  align-items:flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+.edu-row.small{
+  margin-top: 8px;
+  align-items:center;
+}
+.edu-meta{ text-align: right; }
+
+/* --- timeline --- */
+.timeline{
+  position: relative;
+  margin-top: 10px;
+  padding-left: 18px;
+}
+.timeline::before{
+  content:"";
+  position:absolute;
+  left: 7px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: rgba(255,255,255,.14);
+}
+
+.t-item{
+  position: relative;
+  display:grid;
+  grid-template-columns: 18px 1fr;
+  gap: 12px;
+  padding: 10px 0;
+}
+.t-dot{
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  margin-top: 8px;
+  background: rgba(124,92,255,.9);
+  box-shadow: 0 0 0 4px rgba(124,92,255,.15);
+}
+.t-content{
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.05);
+  border-radius: 14px;
+  padding: 12px;
+}
+.t-head{
+  display:flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+.t-date{
+  white-space: nowrap;
+}
+
+/* --- projects --- */
+.proj-top{
+  display:flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+/* --- Footer centering --- */
+.footer-center{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-line{
+  margin: 0;
+}
+
+/* Contact: single-column after removing the form */
+.contact-grid.single{
+  grid-template-columns: 1fr;
+}
+
+.contact-actions{
+  margin-top: 12px;
+}
