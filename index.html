@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katharina Cheng | Portfolio</title>
+  <meta name="description" content="Katharina Cheng — Informatics (Data Science) @ UW. Projects in full-stack, data engineering, and applied ML." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="nav">
+      <a class="brand" href="#top">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Katharina Cheng</span>
+      </a>
+
+      <nav class="navlinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn" href="profolio_needed_doc/Qiao-Yun Cheng Resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <a class="btn" href="profolio_needed_doc/CV.pdf" target="_blank" rel="noopener">CV</a>
+        <a class="btn primary" href="http://www.linkedin.com/in/qiaoyc" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <p class="kicker">UW Informatics · Data Science</p>
+      <h1>Qiao-Yun (Katharina) Cheng</h1>
+      <p class="subtitle">
+        I'm a UW Informatics student (Data Science concentration, June 2026) building full-stack products and
+        data-driven systems—from real-time web apps to ETL pipelines and applied ML/LLM workflows.
+      </p>
+
+      <div class="ctaRow">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+
+      <div class="pillRow" aria-label="Highlights">
+        <a class="pill" href="#projects">Full-stack</a>
+        <a class="pill" href="#projects">Data Engineering</a>
+        <a class="pill" href="#projects">Applied ML/LLMs</a>
+        <a class="pill" href="#projects">Visualization</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section card" id="about">
+      <h2>About</h2>
+      <p class="muted">
+        I’m Qiao-Yun (Katharina) Cheng, a Bachelor of Science in Informatics student at the University of Washington
+        (Data Science concentration, graduating June 2026). I enjoy building end-to-end systems—cleaning and modeling data,
+        shipping user-facing features, and turning messy information into clear, decision-ready insights.
+      </p>
+
+      <div class="divider"></div>
+
+      <div class="two-col">
+        <div>
+          <h3>What I’m focused on</h3>
+          <p class="muted">
+            Full-stack development (React/Node), data engineering (ETL + dimensional modeling), and applied ML/LLM workflows
+            (clustering, topic modeling, prompt-based labeling, evaluation).
+          </p>
+        </div>
+        <div>
+          <h3>What I’m looking for</h3>
+          <p class="muted">
+            Internship / early-career roles across Software Engineering, Data, Product, or UX-adjacent work where I can
+            collaborate with stakeholders, iterate quickly, and ship measurable improvements.
+          </p>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <p class="muted">
+        Recent roles include Teaching Assistant (INFO 103) and UI/UX Designer at Svim, plus research on social media
+        algorithms using X Community Notes.
+      </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p class="muted">
+          A few projects spanning full-stack systems, data engineering, and applied ML/LLMs.
+          (Replace Demo/GitHub links when you’re ready.)
+        </p>
+      </div>
+
+      <div class="grid">
+        <!-- Project 1 -->
+        <article class="card project">
+          <h3>Study Buddy — UW-only Study Partner Platform</h3>
+          <p class="muted">
+            Led a 4-person team building a verified-login platform with profiles, invitations, and real-time chat.
+          </p>
+          <ul class="bullets">
+            <li>Owned system architecture + schema + endpoint documentation</li>
+            <li>Built homepage + invitation workflow; implemented session middleware for current-user identity</li>
+            <li>Co-built real-time chat with WebSockets + database-backed history</li>
+          </ul>
+          <div class="linkRow">
+            <a class="link" href="#" target="_blank" rel="noopener">Demo</a>
+            <a class="link" href="#" target="_blank" rel="noopener">GitHub</a>
+            <a class="link" href="#" target="_blank" rel="noopener">Case Study</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card project">
+          <h3>Social Media Algorithms — X Community Notes Research</h3>
+          <p class="muted">
+            Research pipeline analyzing Community Notes: cleaning/joining tables, modeling latent structure, and interpreting clusters.
+          </p>
+          <ul class="bullets">
+            <li>Built K-means clustering in 3-factor space; iterated to balance interpretability vs. overfitting</li>
+            <li>Ran LLM-assisted cluster annotation with controlled examples; evaluated label stability and quality</li>
+            <li>Visualized topics/clusters in interactive 3D (Plotly); tested confidence thresholds for coverage vs. reliability</li>
+          </ul>
+          <div class="linkRow">
+            <a class="link" href="#" target="_blank" rel="noopener">Write-up</a>
+            <a class="link" href="#" target="_blank" rel="noopener">Code</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="card project">
+          <h3>Climate TRACE Greenhouse Gas Data Warehouse</h3>
+          <p class="muted">
+            Designed a star-schema dimensional model and built ETL to load and analyze 70k+ sites across 54 country CSVs.
+          </p>
+          <ul class="bullets">
+            <li>Implemented ETL to ingest/clean datasets, map ISO codes to regions, and automate bulk loads</li>
+            <li>Authored advanced SQL (window functions, CUBE, top-k sector analyses) for policy-ready insights</li>
+            <li>Delivered dashboards/figures highlighting persistent top emitters</li>
+          </ul>
+          <div class="linkRow">
+            <a class="link" href="#" target="_blank" rel="noopener">Dashboard</a>
+            <a class="link" href="#" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="card project">
+          <h3>Weather Visualization Dashboard (D3.js)</h3>
+          <p class="muted">
+            Interactive dashboard for comparing daily/monthly average temperatures between global cities (2014–2015).
+          </p>
+          <ul class="bullets">
+            <li>Built responsive charts + dropdown filters in D3 and JavaScript</li>
+            <li>Cleaned/transformed historical data (Weather Underground) for analysis and visualization</li>
+          </ul>
+          <div class="linkRow">
+            <a class="link" href="#" target="_blank" rel="noopener">Live Site</a>
+            <a class="link" href="#" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section card" id="skills">
+      <h2>Skills</h2>
+      <p class="muted">Core tools and strengths I use to ship products and run data/ML workflows.</p>
+
+      <div class="divider"></div>
+
+      <div class="skills-grid">
+        <div class="skillBlock">
+          <h3>Technical</h3>
+          <div class="pillRow">
+            <span class="pill">Python</span>
+            <span class="pill">R</span>
+            <span class="pill">Java</span>
+            <span class="pill">SQL</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">Swift</span>
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+            <span class="pill">D3</span>
+          </div>
+        </div>
+
+        <div class="skillBlock">
+          <h3>Tools & Platforms</h3>
+          <div class="pillRow">
+            <span class="pill">MongoDB</span>
+            <span class="pill">Azure</span>
+            <span class="pill">Tableau</span>
+            <span class="pill">Figma</span>
+            <span class="pill">DevOps</span>
+            <span class="pill">Plotly</span>
+          </div>
+        </div>
+
+        <div class="skillBlock">
+          <h3>Collaboration</h3>
+          <div class="pillRow">
+            <span class="pill">Stakeholder communication</span>
+            <span class="pill">Documentation</span>
+            <span class="pill">Team leadership</span>
+            <span class="pill">Teaching/mentoring</span>
+          </div>
+        </div>
+
+        <div class="skillBlock">
+          <h3>Languages</h3>
+          <div class="pillRow">
+            <span class="pill">English</span>
+            <span class="pill">Mandarin</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section card" id="contact">
+      <h2>Contact</h2>
+      <p class="muted">
+        The fastest way to reach me is email. You can also find me on LinkedIn and GitHub.
+      </p>
+
+      <div class="divider"></div>
+
+      <div class="contact-grid">
+        <div class="contactCard">
+          <h3>Links</h3>
+          <ul class="cleanList">
+            <li><a class="link" href="mailto:qiaoyc2@uw.edu">qiaoyc2@uw.edu</a></li>
+            <li><a class="link" href="http://www.linkedin.com/in/qiaoyc" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a class="link" href="YOUR_GITHUB_URL" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a class="link" href="YOUR_RESUME_LINK.pdf" target="_blank" rel="noopener">Resume/CV</a></li>
+            <li><span class="muted">(206) 823-6913</span></li>
+          </ul>
+        </div>
+
+        <form class="contactForm" action="#" method="post">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" />
+          </label>
+
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@example.com" />
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="Say hi..."></textarea>
+          </label>
+
+          <button class="btn primary" type="submit">Send</button>
+          <p class="tiny muted">Tip: connect this to Formspree / Netlify Forms later if you want it to actually send.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> Katharina Cheng</p>
+      <p class="tiny muted">Last updated: <span id="lastUpdated"></span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
